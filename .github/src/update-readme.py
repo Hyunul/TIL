@@ -102,11 +102,10 @@ with open("README.md", "w") as f:
     file_list.sort(key=lambda file: file[2], reverse=True)
     f.write("### Categories\n")
     for file in file_list:
-        # file[0] = ./algorithm/18.py
-        f.write("✔[{}](#{})\n".format(file[0].replace("./", ""), file[0]))
+        f.write("✔[{}](#{})\n".format(file[0], file[0]))
     f.write("\n")
 
     for file in file_list:
-        f.write("### [{}](#{})\n".format(file[0], file[0]))
+        f.write("### [{}](#{})\n".format(file[0].replace(".", ""), file[0]))
         print_file_list(f, file[3], 0)
         f.write("\n")
