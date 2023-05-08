@@ -103,7 +103,7 @@ with open("README.md", "w") as f:
     f.write("### Categories\n")
     for file in file_list:
         # file[0] = ./algorithm/18.py
-        f.write("✔[{}](#{})\n".format(file[0].replace(".", ""), file[0]))
+        f.write("✔[{}](#{})\n".format(file[0].replace("./", ""), file[0]))
     f.write("\n")
 
     for file in file_list:
