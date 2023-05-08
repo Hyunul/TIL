@@ -86,10 +86,9 @@ only_files.sort(key=lambda file: file[2], reverse=True)
 
 # README.md 파일을 열어 파일 경로를 추가
 with open("README.md", "w") as f:
-    f.write("# mathematics\n")
-    f.write("A collection of notes and solutions on various mathematical topics.\n\n")
-    f.write("---\n\n")
+    f.write("# Algorithm\n")
 
+    # 최근 3개의 파일을 출력
     # most = 3
     # f.write("### {} most recent study\n".format(most))
     # for i in range(most):
