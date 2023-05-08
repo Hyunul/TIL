@@ -71,8 +71,9 @@ def print_file_list(f, file_list, level):
             f.write("  ")
 
         if len(file[3]) == 0:  # 파일이면 수정 날짜와 함께 출력
-            f.write("- [{}](\"{}\") - {}\n".format(file[0],
+            f.write("| [{}](\"{}\")|{}|\n".format(file[0],
                     file[1].replace(' ', '_'), file[2]))
+            f.write("|---|---|\n")
         else:  # 디렉토리면 날짜 빼고 출력
             f.write("- [{}](\"{}\")\n".format(file[0],
                     file[1].replace(' ', '_')))
@@ -96,11 +97,11 @@ with open("README.md", "w") as f:
     #             only_files[i][1].replace(' ', '_'), only_files[i][2]))
     # f.write("\n")
 
-    file_list.sort(key=lambda file: file[2], reverse=True)
-    f.write("### Categories\n")
-    for file in file_list:
-        f.write("- [{}](#{})\n".format(file[0], file[0]))
-    f.write("\n")
+    # file_list.sort(key=lambda file: file[2], reverse=True)
+    # f.write("### Categories\n")
+    # for file in file_list:
+    #     f.write("- [{}](#{})\n".format(file[0], file[0]))
+    # f.write("\n")
 
     for file in file_list:
         f.write("### [{}](#{})\n".format(file[0], file[0]))
