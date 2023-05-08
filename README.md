@@ -4,7 +4,7 @@
 ### Categories
 - [algorithm](#algorithm)
 
-### [algorithm](#algorithm)
+### ✔[algorithm](#algorithm)
 | File | Date |
 |:---:|:---:|
 | [hello.py]("./algorithm/hello.py") | Mon May 08 2023 |
