@@ -67,7 +67,7 @@ def find_target(path, level):
 def print_file_list(f, file_list, level):
     file_list.sort(key=lambda file: file[2], reverse=True)
     f.write("| File | Date |\n")
-    f.write("|---|---|\n")
+    f.write("|:---:|:---:|\n")
     for file in file_list:
         for i in range(level):
             f.write("  ")
