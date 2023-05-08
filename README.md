@@ -1,13 +1,9 @@
-# mathematics
-A collection of notes and solutions on various mathematical topics.
-
----
-
+# Algorithm
 ### Categories
-- [README.md](#README.md)
-- [algorithm/18.py](#algorithm/18.py)
+- [algorithm](#algorithm)
 
-### [README.md](#README.md)
-
-### [algorithm/18.py](#algorithm/18.py)
+### [algorithm](#algorithm)
+- [hello.py]("./algorithm/hello.py") - Mon May 08 2023
+- [18.py]("./algorithm/18.py") - Mon May 08 2023
+- [test.txt]("./algorithm/test.txt") - Mon May 08 2023
 
