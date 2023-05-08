@@ -66,14 +66,15 @@ def find_target(path, level):
 # 재귀적으로 파일 출력
 def print_file_list(f, file_list, level):
     file_list.sort(key=lambda file: file[2], reverse=True)
+    f.write("| File | Date |\n")
+    f.write("|---|---|\n")
     for file in file_list:
         for i in range(level):
             f.write("  ")
 
         if len(file[3]) == 0:  # 파일이면 수정 날짜와 함께 출력
-            f.write("| [{}](\"{}\") | {} |".format(file[0],
+            f.write("| [{}](\"{}\") | {} |\n".format(file[0],
                     file[1].replace(' ', '_'), file[2]))
-            f.write("|---|---|---|\n")
         else:  # 디렉토리면 날짜 빼고 출력
             f.write("- [{}](\"{}\")\n".format(file[0],
                     file[1].replace(' ', '_')))
