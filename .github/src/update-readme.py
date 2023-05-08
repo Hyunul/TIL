@@ -71,9 +71,9 @@ def print_file_list(f, file_list, level):
             f.write("  ")
 
         if len(file[3]) == 0:  # 파일이면 수정 날짜와 함께 출력
-            f.write("| [{}](\"{}\")|{}|\n".format(file[0],
+            f.write("|[{}](\"{}\")|{}|\n".format(file[0],
                     file[1].replace(' ', '_'), file[2]))
-            f.write("|---|---|\n")
+            f.write("|---|---|---|\n")
         else:  # 디렉토리면 날짜 빼고 출력
             f.write("- [{}](\"{}\")\n".format(file[0],
                     file[1].replace(' ', '_')))
