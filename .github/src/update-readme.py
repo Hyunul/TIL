@@ -103,8 +103,7 @@ with open("README.md", "w") as f:
     file_list.sort(key=lambda file: file[2], reverse=True)
     f.write("### Categories\n")
     for file in file_list:
-        file_path = file[0].replace('.', ' ')
-        f.write("- [{}](#{})\n".format(file_path, file[0]))
+        f.write("- [{}](#{})\n".format(os.path.normpath(file[0]), file[0]))
     f.write("\n")
 
     for file in file_list:
