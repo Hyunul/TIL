@@ -90,12 +90,12 @@ with open("README.md", "w") as f:
     f.write("A collection of notes and solutions on various mathematical topics.\n\n")
     f.write("---\n\n")
 
-    most = 3
-    f.write("### {} most recent study\n".format(most))
-    for i in range(most):
-        f.write("- [{}](\"{}\") - {}\n".format(only_files[i][0],
-                only_files[i][1].replace(' ', '_'), only_files[i][2]))
-    f.write("\n")
+    # most = 3
+    # f.write("### {} most recent study\n".format(most))
+    # for i in range(most):
+    #     f.write("- [{}](\"{}\") - {}\n".format(only_files[i][0],
+    #             only_files[i][1].replace(' ', '_'), only_files[i][2]))
+    # f.write("\n")
 
     file_list.sort(key=lambda file: file[2], reverse=True)
     f.write("### Categories\n")
