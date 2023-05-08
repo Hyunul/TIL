@@ -2,7 +2,7 @@
 ---
 
 ### Categories
-✔[algorithm](#algorithm)
+✔ [algorithm](#algorithm)
 
 ### [algorithm](#algorithm)
 | File | Date |
