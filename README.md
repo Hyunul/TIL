@@ -6,6 +6,7 @@
 |:---:|:---:|
 | [object_type.ts]("./TypeScript/object_type.ts") | Mon May 22 2023 |
 | [Enum.ts]("./TypeScript/Enum.ts") | Mon May 22 2023 |
+| [tsconfig.json]("./TypeScript/tsconfig.json") | Mon May 22 2023 |
 | [simpleType.ts]("./TypeScript/simpleType.ts") | Mon May 22 2023 |
 | [tuple.ts]("./TypeScript/tuple.ts") | Mon May 22 2023 |
 | [array.ts]("./TypeScript/array.ts") | Mon May 22 2023 |
