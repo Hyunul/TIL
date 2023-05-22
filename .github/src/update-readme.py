@@ -88,7 +88,7 @@ only_files.sort(key=lambda file: file[2], reverse=True)
 
 # README.md 파일을 열어 파일 경로를 추가
 with open("README.md", "w") as f:
-    f.write("# Algorithm\n")
+    f.write("# ✨ TIL\n")
     f.write("---\n\n")
 
     # 최근 3개의 파일을 출력
@@ -99,13 +99,13 @@ with open("README.md", "w") as f:
     #             only_files[i][1].replace(' ', '_'), only_files[i][2]))
     # f.write("\n")
 
-    file_list.sort(key=lambda file: file[2], reverse=True)
-    f.write("### Categories\n")
-    for file in file_list:
-        f.write("✔ [{}](#{})\n".format(file[0], file[0]))
-    f.write("\n")
+    # file_list.sort(key=lambda file: file[2], reverse=True)
+    # f.write("### Categories\n")
+    # for file in file_list:
+    #     f.write("✔ [{}](#{})\n".format(file[0], file[0]))
+    # f.write("\n")
 
     for file in file_list:
-        f.write("### [{}](#{})\n".format(os.path.normpath(file[0]), file[0]))
+        f.write("### ✔ [{}](#{})\n".format(os.path.normpath(file[0]), file[0]))
         print_file_list(f, file[3], 0)
         f.write("\n")
