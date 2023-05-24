@@ -99,6 +99,7 @@ with open("README.md", "w") as f:
     #             only_files[i][1].replace(' ', '_'), only_files[i][2]))
     # f.write("\n")
 
+    # 카테고리 출력
     # file_list.sort(key=lambda file: file[2], reverse=True)
     # f.write("### Categories\n")
     # for file in file_list:
